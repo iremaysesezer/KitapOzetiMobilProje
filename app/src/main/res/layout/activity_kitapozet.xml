@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ozt1"
+    android:orientation="vertical"
+    tools:context=".kitapozet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="545dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="545dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="3"
+                        android:text="Kitap Adı:"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/EditTextYazarAdi"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="3"
+                        android:text="Yazar Adı:"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/EditTextKitapAdi"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="3"
+                        android:text="Türü"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                    <Spinner
+                        android:id="@+id/Turu"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_weight="3"
+                        android:text="Türü:"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="3"
+                        android:text="Sayfa Sayısı:"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/EditTextSayfa"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/EditTextOzet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="80dp"
+                android:hint="Özetinizi Yazınız" />
+
+            <Button
+                android:id="@+id/ozetKaydet"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_tasarimi"
+                android:text="Kaydet" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#079992"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/anasayfayaDon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#079992"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:text="anasayfa" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

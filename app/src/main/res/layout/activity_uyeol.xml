@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ozt1"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context=".uyeol">
+
+
+    <EditText
+        android:id="@+id/EditTextAdi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+
+        android:hint="Ad Soyad" />
+
+
+    <EditText
+        android:id="@+id/EditTextKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+
+        android:hint="Kullanıcı Adı" />
+
+
+    <EditText
+        android:id="@+id/EditTextSifre"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_lock_open_black_24dp"
+        android:inputType="textPassword"
+
+        android:hint="Parola" />
+
+    <Button
+        android:id="@+id/Kaydol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_tasarimi"
+        android:text="Kayıt Ol" />
+
+
+</LinearLayout>
